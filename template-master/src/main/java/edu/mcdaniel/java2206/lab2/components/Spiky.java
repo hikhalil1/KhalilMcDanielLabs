@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
  * names to your class, add a reference to your new class and it's major functions in
  * the Application class and then do your coding here.
  */
-public class Example {
+public class Spiky {
 
     //=============================================================================================
     // Private Assets
@@ -19,7 +19,7 @@ public class Example {
     /**
      * This provides access to logging.
      */
-    private final Logger log;
+    
 
     /**
      * This String variable will hold the greeting.
@@ -36,17 +36,14 @@ public class Example {
     // Constructor(s)
     //=============================================================================================
 
-    /**
-     * This No Argument constructor is designed to initialize the greeting to the standard
-     * "Hello World."
-     */
-    public Example(){
-        this.greeting = "Hello";
-        this.audience = "World";
-
-        this.log = LogManager.getLogger(this);
-
-        log.debug("The output message is {} {}!", this.greeting, this.audience);
+  
+    public Spiky(){
+        System.out.println("  \\/");
+        System.out.println(" \\\\//");
+        System.out.println("\\\\\\///");
+        System.out.println("///\\\\\\");
+        System.out.println(" //\\\\");
+        System.out.println("  /\\");
     }
 
 
@@ -60,7 +57,7 @@ public class Example {
      * @param customGreeting the custom greeting to be used.
      * @return the Example object to allow chaining.
      */
-    public Example withGreeting(String customGreeting){
+    /*public Example withGreeting(String customGreeting){
 
         this.greeting = customGreeting;
 
@@ -75,7 +72,7 @@ public class Example {
      * @param customAudience the custom audience who will be addressed
      * @return the Example object to allow chaining.
      */
-    public Example withAudience(String customAudience){
+    /*public Example withAudience(String customAudience){
 
         this.audience = customAudience;
 
